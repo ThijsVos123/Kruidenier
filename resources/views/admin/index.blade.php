@@ -56,7 +56,7 @@
                         <td class="px-4 py-3">€ {{ number_format($product->prijs, 2, ',', '.') }}</td>
                         <td class="px-4 py-3">{{ $product->aantal }}</td>
                         <td class="px-4 py-3">
-                            <button class="text-blue-600 hover:underline">Bewerk</button>
+                            <a href="{{ route('products.edit', $product->id) }}" class="text-blue-600 hover:underline">Bewerk</a>
                         </td>
                     </tr>
                 @endforeach
